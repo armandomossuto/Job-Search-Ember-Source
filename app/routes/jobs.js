@@ -2,7 +2,7 @@ import Route from '@ember/routing/route';
 
 export default Route.extend({
 	model() {
-    return Ember.$.getJSON('https://jobs.github.com/positions.json?').then((data) => {
+    return Ember.$.getJSON('http://cors.io/?u=https://jobs.github.com/positions.json?').then((data) => {
        return data;
 	})},
 
