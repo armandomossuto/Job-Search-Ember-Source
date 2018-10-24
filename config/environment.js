@@ -44,7 +44,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.baseURL = '/Job-Search-Ember-Source';
+    ENV.rootURL = '/Job-Search-Ember-Source';
     ENV.locationType = 'hash';
   }
 
