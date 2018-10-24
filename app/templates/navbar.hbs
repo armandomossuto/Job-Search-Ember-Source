@@ -1,0 +1,12 @@
+<nav class="navbar navbar-inverse navbar-static-top">
+	<div class="container-fluid">
+		<div class="collapse navbar-collapse" id="main-navbar">
+			<ul class="nav navbar-nav">
+				{{#link-to 'index' tagName="li"}}<a href="">Home</a>{{/link-to}}
+				{{#link-to 'jobs' (query-params search="" location="" page="1") tagName="li"}}<a href="">Jobs</a>{{/link-to}}
+				{{#link-to 'profile' tagName="li"}}<a href="">Profile</a>{{/link-to}}
+				{{#link-to 'settings' tagName="li"}}<a href="">Settings</a>{{/link-to}}
+			</ul>
+		</div>
+	</div>
+</nav>

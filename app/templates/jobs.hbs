@@ -1,0 +1,29 @@
+  <div>
+  	{{#each jobs_displayed as |job|}}
+  		<div class="display-job" {{action "gotoJob" job}} >
+  			{{#if job.company_logo}}
+          <img src={{job.company_logo}} /> 
+        {{/if}}
+  			<div> 
+  				<div class="job-title">{{job.title}}</div>
+				<div>
+					<div> {{job.company}} </div>
+					<img src="location-icon.jpg" /> 
+					<div> {{job.location}} </div>
+				</div>
+			</div>
+		</div>
+  	{{/each}}
+  	
+	<nav aria-label="Page navigation example">
+  		<ul class="pagination">
+  			{{#each pages_array as |page_number|}}
+  				{{#if (is-current-page page_number page)}}
+  					<li class="selected-page page-item"><a class="page-link">{{page_number}}</a> </li>
+  				{{else}}
+  					<li class="page-item"><a class="page-link" {{action "changePage" page_number}}>{{page_number}}</a></li>
+  				{{/if}}
+  			{{/each}}
+  		</ul>
+  	</nav>
+  	</div>
