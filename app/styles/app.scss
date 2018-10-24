@@ -1,0 +1,109 @@
+@import "bootstrap";
+
+$background-color: #f2f2f2;
+
+body {
+	background-color: $background-color;
+	margin: 0;
+}
+
+.col-centered{
+	float: none;
+	margin: 0 auto;
+}
+
+.search-box {
+	margin-top: 50px;
+}
+
+.search-box input {
+	width: 40%;
+}
+
+.display-job {
+	display: flex;
+	flex-direction: row;
+	margin: 0 20px 20px 15px;
+	border: solid;
+	border-width: 1px;
+	border-color: #bfbbb5;
+	min-height: 100px;
+}
+
+.job-info {
+	display: flex;
+	flex-direction: column;
+	margin: 0 20px 20px 15px;
+	border: solid;
+	border-width: 1px;
+	border-color: #bfbbb5;
+	min-height: 500px;
+}
+
+.display-job:hover {
+	border-width: 2px;
+	border-color: black;
+	cursor: pointer;
+}
+
+.display-job > img, .job-info > div > img {
+	width: 100px;
+	height: auto;
+	max-height:100%;
+	margin: 10px 15px 10px 15px;
+	object-fit: contain;
+}
+
+.display-job > div {
+	display: flex;
+	flex-direction: column;
+	margin-left: 15px;
+}
+
+.job-info > div:first-child {
+	display: flex;
+	flex-direction: row;
+	margin-left: 15px;
+}
+
+.display-job > div img, .job-info > div > div img{
+	width: 10px;
+	height: 10px;
+	margin: 5px 20px 5px 20px;
+}
+
+.display-job > div div {
+	display: flex;
+	flex-direction: row;
+}
+
+.job-info > div > div > div {
+	display: flex;
+	flex-direction: row;
+}
+
+.job-info > div:nth-child(2) {
+	margin: 10px 10px 10px 10px;
+}
+
+.job-title {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.selected-page {
+	font-weight: bold;
+}
+
+footer {
+	background-color: rgb(51, 51, 51);
+	color: rgb(255, 255, 255);
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.bold-text {
+	font-weight: bold;
+	font-size: 20px;
+}
