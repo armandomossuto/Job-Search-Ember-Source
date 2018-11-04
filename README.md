@@ -1,7 +1,6 @@
 # job-search-ember
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Job Search platform. Made with Ember.JS and data from Github Jobs API.
 
 ## Prerequisites
 

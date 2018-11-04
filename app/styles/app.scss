@@ -9,6 +9,12 @@ body {
 
 .index-body {
 	min-height: 800px;
+	display: flex;
+	flex-direction: column;
+}
+
+.index-body > div:nth-child(2) {
+	min-height: 700px;
 }
 
 .col-centered{
@@ -111,3 +117,5 @@ footer {
 	font-weight: bold;
 	font-size: 20px;
 }
+
+

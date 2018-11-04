@@ -1,8 +1,8 @@
 import Route from '@ember/routing/route';
 
 export default Route.extend({
-	model() {
-    return Ember.$.getJSON('https://cors.io/?https://jobs.github.com/positions.json?').then((data) => {
+	model(params) {
+    return Ember.$.getJSON('https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?description='+params.search+'&location='+params.location).then((data) => {
        return data;
 	})},
 
@@ -11,10 +11,3 @@ export default Route.extend({
    		controller.set('jobs',model);
  }
 });
-
-
-/*  default Route.extend({
-	 model() {
-    return this.store.findAll('jobs');
-	}
-}); */ 
